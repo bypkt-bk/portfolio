@@ -8,12 +8,13 @@ font-weight: 100;
 line-height: 48px; /* 50% */
 letter-spacing: -1.152px;
 margin-left: 55px;
+margin-top: 84px;
 }
 .data{
     display: flex;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 25px;
+    margin-top: 28px;
 }
 .data img{
     width: 40%;
