@@ -1,15 +1,17 @@
 
 import './App.css'
 import Navbar from './components/nav/nav'
-import Main from './components/main/main'
 import Profile from './components/profile/profile'
+import About from './components/about/about'
+import Education from './components/education/education'
 function App() {
 
   return (
     <>
         <Navbar/>
-        <Main/>
         <Profile/>
+        <About/>
+        <Education/>
     </>
   )
 }

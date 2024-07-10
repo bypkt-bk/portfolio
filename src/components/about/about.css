@@ -1,0 +1,58 @@
+.parent{
+    width: 967px;
+height: 220px;
+flex-shrink: 0;
+}
+.title{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 28px;
+}
+.about{
+    color: var(--white, #FFF);
+    font-family: "Roboto Mono";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 75% */
+    letter-spacing: -0.768px;
+    }
+    .line {
+        width: 329.002px;
+    height: 3px;
+    background: #FDA4AF;
+    }
+.info{
+    display: flex;
+    align-items: flex-start;
+    gap: 38px;
+    align-self: stretch;
+}
+.about-me{
+    color: var(--neutral-100, #F5F5F5);
+font-family: "Roboto Mono";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+text-align: left;
+width: 563px;}
+.about-me p{
+    color: var(--rose-400, #FB7185);
+font-family: "Roboto Mono";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.gen-info{
+    color: var(--neutral-100, #F5F5F5);
+font-family: "Roboto Mono";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+text-align: left;
+
+}
