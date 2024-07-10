@@ -3,7 +3,7 @@ function Education() {
     return (
         <>
             <div className="section">
-                <div className="title">Education
+                <div className="title-education">Education
                 </div>
                 <div className="info">
                     <div className="tag">
@@ -38,16 +38,21 @@ function Education() {
                         </svg></div>
                     </div>
                     <div className="school">
-                        <div className="university">2022 - Present
-                            Chulalongkorn university
-                            Information technology (IT), Science Student Committee's,
-                            Public Relations (PR) Designer, Department of Computer Science</div>
-                        <div className="upper">2019 - 2021
-                            Princess Chulabhorn Science High School Mukdahan
-                            Leader, Artificial Intelligence Science Project Club</div>
-                        <div className="lower">2015 - 2018
-                            Benchama Maharat School
+                        <div className="university">
+                            <span>2022 - Present</span>
+                            <p>Chulalongkorn university</p>
+                            <p>Information technology (IT), Science Student Committee's,</p>
+                            <p>Public Relations (PR) Designer, Department of Computer Science</p></div>
+                       
+                            <div className="upper">
+                            <span>2019 - 2021</span>
+                            <p>Princess Chulabhorn Science High School Mukdahan</p>
+                            <p>Leader, Artificial Intelligence Science Project Club</p></div>
+                        <div className="lower">
+                            <span>2015 - 2018</span>
+                            <p>Benchama Maharat School</p>
                         </div>
+                        
                     </div>
                 </div>
             </div>

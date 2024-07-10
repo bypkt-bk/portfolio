@@ -10,7 +10,7 @@ margin-top: 160px;
 
 .about-section{
     display: flex;
-    width: 967px;
+    margin: auto;
     flex-direction: column;
     align-items: flex-start;
     gap: 28px;
@@ -39,7 +39,7 @@ height: 3px;
 .info {
     display: flex;
     align-items: flex-start;
-    gap: 38px;
+    gap: 18px;
     align-self: stretch;
 }
 
@@ -74,4 +74,14 @@ height: 3px;
     /* 150% */
     text-align: left;
 
+}
+.gen-info p {
+    margin: 0;
+    display: flex;
+}
+
+.gen-info p span {
+    min-width: 120px;
+    font-weight: bold;
+    display: inline-block; /* Ensure the span takes up its space */
 }

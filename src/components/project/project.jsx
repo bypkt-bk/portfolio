@@ -3,7 +3,7 @@ function Project() {
     return (
         <>
             <div className="section">
-                <div className="title">Project</div>
+                <div className="title-project">Project</div>
                 <div className="card-info">
                     <div className="card-section">
                         <div className="card">

@@ -2,10 +2,10 @@
 
 .bar {
     display: flex;
-    width: 1280px;
-    padding: 28px;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 28px;
+    margin-top: 28px;
 }
 
 .bar .right {

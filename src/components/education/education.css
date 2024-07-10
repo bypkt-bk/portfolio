@@ -8,9 +8,9 @@
     align-items: center;
     gap: 80px;
     align-content: center;
-    margin-top: 88px;
+    margin-top: 48px;
 }
-.section .title {
+.section .title-education{
     color: var(--white, #FFF);
 text-align: center;
 font-family: "Roboto Mono";
@@ -20,15 +20,21 @@ font-weight: 500;
 line-height: 48px; /* 75% */
 letter-spacing: -0.768px;
 align-self: stretch;
+margin-top: 108px;
+}
+.section .info{
+display: flex;
+justify-content: space-evenly;
 }
 .section .tag{
     display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-gap: 316px;
+gap: 328px;
 }
 .section .tag .uni{
+    margin-top: -5px;
     color: var(--white, #FFF);
 font-family: "Roboto Mono";
 font-size: 16px;
@@ -56,7 +62,7 @@ line-height: 24px; /* 150% */
     display: flex;
 flex-direction: column;
 align-items: center;
-gap: 130px;
+gap: 135px;
 }
 .school {
     display: flex;
@@ -64,19 +70,24 @@ width: 602px;
 flex-direction: column;
 justify-content: center;
 align-items: flex-start;
-gap: 100px;
-}
-.high {
-    margin-top: -20px;
-}
-.school div{
-    color: var(--neutral-100, #F5F5F5);
+color: var(--neutral-100, #F5F5F5);
 font-family: "Roboto Mono";
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
 text-align: left;
-max-height: 96px;
-height: 100%;
+}
+.high {
+    margin-top: -20px;
+}
+.university{
+    margin-top:-4px;
+}
+.upper{
+    margin-top:78px;
+
+}
+.lower{
+    margin-top: 86px;
 }

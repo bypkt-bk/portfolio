@@ -1,4 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.title-project{
+    color: var(--white, #FFF);
+text-align: center;
+font-family: "Roboto Mono";
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px; /* 75% */
+letter-spacing: -0.768px;
+margin-top: 108px;
+}
 .card-section{
     display: flex;
 width: 1060px;
