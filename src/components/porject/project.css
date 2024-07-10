@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.card-section{
+    display: flex;
+width: 1060px;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 48px;
+}
+
+.card{
+    display: flex;
+padding: 24px;
+flex-direction: column;
+align-items: flex-start;
+border-radius: 6px;
+border: 1px solid var(--neutral-800, #262626);
+background: var(--neutral-700, #404040);
+
+/* shadow */
+box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09);
+}
+.inside {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.img-card{
+    border-radius: 5px;
+background: linear-gradient(180deg, #DB4E66 0%, #A24688 39.57%, #4E3ABA 100%);
+width: 188px;
+height: 270px;
+flex-shrink: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+.content div,.content p{
+    color: var(--neutral-50, #FAFAFA);
+
+/* subtle */
+color: var(--neutral-50, #FAFAFA);
+font-family: "Roboto Mono";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+text-align: left;
+margin: 12px;
+}

@@ -2,14 +2,18 @@ import './about.css'
 function About() {
     return (
         <>
-            <div className="parent">
-                <div className="title">
-                <div className="about">About</div>
-                <div className="line"></div></div>
+            <div className="about-center">
+            <div className="about-section">
+               <div className="title-about">
+                    <div className="text-about">About
+                    </div>
+                    <div className="line"></div>
+               </div>
+                
                 <div className="info">
                     <div className="about-me">
-                    I am Banyaphon Kongtham, a Mathematics and Computer Science student at Chulalongkorn University. I work with the Science Student Committee's IT department and
-                    <p> i passionate about UX/UI design.</p></div>
+                        I am Banyaphon Kongtham, a Mathematics and Computer Science student at Chulalongkorn University. I work with the Science Student Committee's IT department and
+                        <p> i passionate about UX/UI design.</p></div>
                     <div className="gen-info"><p>Name: Banyaphon Kongtham</p>
                         <p>Birthday: Feb 8, 2004</p>
                         <p>Marital: Single</p>
@@ -18,7 +22,7 @@ function About() {
                         <p>Phone: +66631594914</p></div>
                 </div>
 
-            </div>
+            </div></div>
 
         </>
     )

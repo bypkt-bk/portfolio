@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.title{
+    color: var(--white, #FFF);
+text-align: center;
+font-family: "Roboto Mono";
+font-size: 64px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px; /* 75% */
+letter-spacing: -0.768px;
+margin-top: 88px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-item {
+    width: 130px;
+    height: 130px;
+    background: var(--neutral-600, #525252);
+    border-radius: 22.1px;
+    box-shadow: 0px 22px 50px 24px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    transform: rotate(45deg);
+}
+
+.skill-item::before {
+    content: "my skill";
+    color: #FFF;
+text-align: center;
+font-family: "Roboto Mono";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+    text-align: center;
+    display: block;
+    transform: rotate(-45deg);
+}
