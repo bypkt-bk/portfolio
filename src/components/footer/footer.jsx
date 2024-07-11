@@ -2,7 +2,7 @@ import './footer.css'
 function Footer() {
     return (
         <>
-             <div className="contact-section">
+             <div id='Contact' className="contact-section">
             <div className="contact-title">Contact</div>
             <div className="contact-subtitle">
                 Let's create something amazing together. Contact me today.

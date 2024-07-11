@@ -36,6 +36,11 @@ margin-top: 108px;
     margin-right: 40px;
     transform: rotate(45deg);
 }
+.skill-item:hover{
+opacity: 0.81;
+background: var(--rose-300, #FDA4AF);
+box-shadow: 0px 22px 50px 24px rgba(253, 56, 56, 0.25);
+}
 
 .skill-item::before {
     content: "my skill";
