@@ -23,3 +23,6 @@
     line-height: 28px;
     /* 155.556% */
 }
+.bar .right div:hover{
+    color: #ffffff;
+}

@@ -17,7 +17,7 @@ function Profile() {
                         <rect x="66.3868" y="28.28" width="20" height="20" rx="3.4" transform="rotate(-136 66.3868 28.28)" fill="#FDA4AF" />
                     </svg></div>
                     <div className="name">I’M<p>Banyaphon Kongtham</p></div>
-                    <div className="contact-me"><p>Contact Me</p></div>
+                    <a href='#Contact'><button className="contact-me"><p>Contact Me</p></button></a>
                     </div>
                     <div className="contact-bar">
                         <div className="contact-item">
