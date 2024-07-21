@@ -1,56 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-.title-skill{
+
+.skill-section {
+    margin: 10% auto;
+    max-width: 90%;
+}
+
+.title-skill {
     color: var(--white, #FFF);
-text-align: center;
-font-family: "Roboto Mono";
-font-size: 64px;
-font-style: normal;
-font-weight: 500;
-line-height: 48px; /* 75% */
-letter-spacing: -0.768px;
-margin-top: 108px;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    /* 75% */
+    letter-spacing: -0.768px;
+    margin-bottom: 56px;
 }
 
 .skills-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 88px;
 }
 
 .skills-row {
     display: flex;
     justify-content: center;
+    gap: 8vw;
 }
 
 .skill-item {
-    width: 130px;
-    height: 130px;
+    width: 12.5vw;
+    height: 12.5vw;
     background: var(--neutral-600, #525252);
-    border-radius: 22.1px;
+    border-radius: 2vw;
     box-shadow: 0px 22px 50px 24px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    
     transform: rotate(45deg);
 }
-.skill-item:hover{
-opacity: 0.81;
-background: var(--rose-300, #FDA4AF);
-box-shadow: 0px 22px 50px 24px rgba(253, 56, 56, 0.25);
+
+.skill-item:hover {
+    background: var(--rose-300, #FDA4AF);
+    box-shadow: 10px 10px 40px 10px rgba(253, 56, 56, 0.25);
 }
 
 .skill-item::before {
     content: "my skill";
-    color: #FFF;
-text-align: center;
-font-family: "Roboto Mono";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 1.6vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2vw;
+    /* 142.857% */
     text-align: center;
     display: block;
     transform: rotate(-45deg);

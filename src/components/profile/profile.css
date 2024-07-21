@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 .parent {
-    margin-left: 148px;
-    margin-top: 380px;
-}
-.block-B{
-    display: flex;
-width: 100%;
-flex-direction: column;
-align-items: flex-start;
-gap: 33px;
-flex-shrink: 0;
-
-}
-.block-A{
-    display: flex;
-width: 1074.28px;
-justify-content: space-between;
-align-items: center;
-flex-direction: row;
-}
-.sakura {
-    width: 67.28px;
-    height: 96.28px;
-    flex-shrink: 0;
+    margin: 10% auto;
+    max-width: 90%;
 }
 
-.name {
+.block-B {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+
+}
+
+.block-A {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+}
+
+.im {
     color: var(--white, #FFF);
     font-family: "Roboto Mono";
     font-size: 40px;
@@ -37,14 +41,15 @@ flex-direction: row;
     display: flex;
 }
 
-.name p {
+.name {
     color: var(--rose-400, #FB7185);
     font-family: "Roboto Mono";
     font-size: 64px;
     font-style: normal;
     font-weight: 500;
-    line-height: 52px;
+    line-height: 64px;
     letter-spacing: -0.624px;
+    display: flex;
 }
 
 .contact-me {
@@ -56,10 +61,11 @@ flex-direction: row;
     border-radius: 4px;
     border: 3px solid var(--rose-200, #FECDD3);
     cursor: pointer;
-    
+
 }
+
 button:hover {
-    background-color: rgba(254, 205, 211, 0.6); /* Adjust the alpha value as needed */
+    background-color: rgba(254, 205, 211, 0.6);
 }
 
 
@@ -70,15 +76,14 @@ button:hover {
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    /* 155.556% */
 }
 
 .contact-bar {
     position: fixed;
     display: flex;
     margin-top: 100px;
-    margin-right: 28px;
-    right: 0px
+    margin-right: 1%;
+    right: 0px;
 }
 
 .contact-item {

@@ -14,7 +14,7 @@
     gap: 24px;
 }
 
-.bar .right div {
+.bar .right a {
     color: var(--neutral-500, #737373);
     font-family: "Roboto Mono";
     font-size: 18px;
@@ -23,6 +23,6 @@
     line-height: 28px;
     /* 155.556% */
 }
-.bar .right div:hover{
+.bar .right a:hover{
     color: #ffffff;
 }
