@@ -15,9 +15,12 @@ defineProps({ project: Object })
   padding: 1rem;
   width: 320px;
   height: 380px;
+  min-width: none;
+  max-width: none;
   color: black;
   border-radius: 18px;
   border: 4px solid var(--redink, #ab4b43);
   background: #fff;
+  cursor: pointer;
 }
 </style>

@@ -13,13 +13,24 @@
       stroke-width="4"
     />
   </svg>
-  <section class="info">
-    <h1>Banyaphon Kongtham</h1>
-    <Tag class="Tag" label="Chulalongkorn University" />
+  <section class="frame">
+    <div class="info">
+      <h1>Banyaphon Kongtham</h1>
+      <div class="Tag">
+        <Tag class="Tag" label="UX/UI" />
+        <Tag class="Tag" label="Front end" />
+        <Tag class="Tag" label="Web Devloper" />
+      </div>
+    </div>
+    <section class="education">
+      <Education />
+    </section>
   </section>
 </template>
-<script>
+
+<script setup>
 import Tag from '../global/Tag.vue'
+import Education from '../education/Education.vue'
 </script>
 <style scoped>
 svg {
@@ -27,15 +38,24 @@ svg {
   position: absolute;
 }
 
-.info {
+.frame {
   display: flex;
+  flex-direction: column;
   height: 735px;
   border-radius: 10px;
   position: relative;
   z-index: 5;
-  color: white;
   justify-content: center;
   align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 80px;
 }
 
 h1 {
@@ -46,5 +66,15 @@ h1 {
   font-weight: 800;
   line-height: 48px;
   letter-spacing: -0.576px;
+}
+.Tag {
+  display: flex;
+  gap: 4px;
+}
+.education {
+  z-index: 50;
+  position: absolute;
+  right: -100px;
+  top: 200px;
 }
 </style>

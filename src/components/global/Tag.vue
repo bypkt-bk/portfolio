@@ -8,9 +8,12 @@ defineProps({ label: String })
 
 <style>
 .tag {
-  background: #e0b0ff;
+  background: var(--creamy);
   padding: 4px 8px;
-  border-radius: 6px;
+  border-radius: 360px;
+  border: 2px solid white;
   font-size: 14px;
+  color: white;
+  width: fit-content;
 }
 </style>

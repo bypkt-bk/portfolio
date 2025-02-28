@@ -4,7 +4,9 @@
       <NavBar />
       <MenuDropdown />
     </section>
-    <HeroBanner />
+    <section class="Hero">
+      <HeroBanner />
+    </section>
 
     <section class="section">
       <ProjectMarqueeBottom class="Marquee0" />
@@ -51,8 +53,8 @@ div {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  align-content: center;
-  gap: 20px;
+  align-content: enter;
+  gap: 48px;
   row-gap: 20px;
   align-self: stretch;
   flex-wrap: wrap;
@@ -66,6 +68,9 @@ div {
   gap: 8px;
   position: absolute;
   right: 0;
+}
+.Hero {
+  margin-bottom: 100px;
 }
 .section h2 {
   color: black;
@@ -87,5 +92,13 @@ div {
 }
 .Marquee5 {
   top: 700px;
+}
+.Marquee0:hover,
+.Marquee1:hover,
+.Marquee2:hover,
+.Marquee3:hover,
+.Marquee4:hover,
+.Marquee5:hover {
+  background-color: black;
 }
 </style>
