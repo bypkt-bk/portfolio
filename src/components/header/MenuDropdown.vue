@@ -17,7 +17,6 @@ const isOpen = ref(false)
 <style scoped>
 .dropdown {
   position: relative;
-
   z-index: 10;
 }
 button {
@@ -26,7 +25,7 @@ button {
   justify-content: flex-end;
   align-items: center;
   border-radius: 18px;
-  border: 4px solid var(--redbrick, #c46961);
+  border: 4px solid var(--redink);
   background: var(--white, #fff);
   color: var(--redbrick);
 }
