@@ -1,47 +1,96 @@
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1121"
-    height="735"
-    viewBox="0 0 1121 735"
-    fill="none"
-  >
-    <path
-      d="M1102.06 732.643H18.0607C9.22412 732.643 2.06067 725.48 2.06067 716.643V18.0044C2.06067 9.15919 9.17314 2.0044 18.0011 2.0044L414.076 2.00443C422.94 2.00443 430.26 9.18802 430.26 17.9972V59.5032C430.26 70.5498 439.215 79.4972 450.26 79.4972H1102.06C1110.9 79.4972 1118.06 86.6607 1118.06 95.4972V716.643C1118.06 725.48 1110.9 732.643 1102.06 732.643Z"
-      fill="#C46961"
-      stroke="#AB4B43"
-      stroke-width="4"
-    />
-  </svg>
-  <section class="frame">
-    <div class="info">
-      <h1>Banyaphon Kongtham</h1>
-      <div class="Tag">
-        <Tag class="Tag" label="UX/UI" />
-        <Tag class="Tag" label="Front end" />
-        <Tag class="Tag" label="Web Devloper" />
+  <div>
+    <svg
+      v-if="isLargeScreen"
+      xmlns="http://www.w3.org/2000/svg"
+      width="1121"
+      height="735"
+      viewBox="0 0 1121 735"
+      fill="none"
+    >
+      <path
+        d="M1102.06 732.643H18.0607C9.22412 732.643 2.06067 725.48 2.06067 716.643V18.0044C2.06067 9.15919 9.17314 2.0044 18.0011 2.0044L414.076 2.00443C422.94 2.00443 430.26 9.18802 430.26 17.9972V59.5032C430.26 70.5498 439.215 79.4972 450.26 79.4972H1102.06C1110.9 79.4972 1118.06 86.6607 1118.06 95.4972V716.643C1118.06 725.48 1110.9 732.643 1102.06 732.643Z"
+        fill="#C46961"
+        stroke="#AB4B43"
+        stroke-width="4"
+      />
+    </svg>
+
+    <div v-if="isLargeScreen" class="overlay">
+      <div class="info">
+        <h1>Banyaphon Kongtham</h1>
+        <div class="Tag">
+          <Tag class="Tag" label="UX/UI" />
+          <Tag class="Tag" label="Front end" />
+          <Tag class="Tag" label="Web Developer" />
+        </div>
       </div>
+      <section class="education">
+        <Education />
+      </section>
     </div>
-    <section class="education">
-      <Education />
-    </section>
-  </section>
+
+    <div v-else class="hero">
+      <div class="info">
+        <h1>Banyaphon Kongtham</h1>
+        <div class="Tag">
+          <Tag class="Tag" label="UX/UI" />
+          <Tag class="Tag" label="Front end" />
+          <Tag class="Tag" label="Web Developer" />
+        </div>
+      </div>
+      <section class="education">
+        <Education />
+      </section>
+    </div>
+  </div>
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue'
 import Tag from '../global/Tag.vue'
 import Education from '../education/Education.vue'
-</script>
-<style scoped>
-svg {
-  z-index: -10;
-  position: absolute;
+
+const isLargeScreen = ref(window.matchMedia('(min-width: 1279px)').matches)
+
+const updateScreenSize = () => {
+  isLargeScreen.value = window.matchMedia('(min-width: 1279px)').matches
 }
 
-.frame {
+onMounted(() => {
+  window.addEventListener('resize', updateScreenSize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenSize)
+})
+</script>
+
+<style scoped>
+.hero {
+  display: flex;
+  background-color: #c46961;
+  margin-top: 18px;
+  height: 600px;
+  width: calc(100vw - 64px); /* Subtract 40px left and 40px right margin */
+  border-radius: 18px;
+  border: 4px solid var(--redink);
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 48px;
+}
+
+svg {
+  position: absolute;
+  z-index: -1;
+  top: -68px;
+}
+
+.overlay {
   display: flex;
   flex-direction: column;
-  height: 735px;
+  height: 667px;
+  width: 1121px;
   border-radius: 10px;
   position: relative;
   z-index: 5;
@@ -54,27 +103,28 @@ svg {
   gap: 8px;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 80px;
+  position: relative; /* ✅ Fix positioning issue */
 }
 
 h1 {
   color: var(--white, #fff);
   text-align: center;
   font-size: 48px;
-  font-style: normal;
   font-weight: 800;
   line-height: 48px;
   letter-spacing: -0.576px;
 }
+
 .Tag {
   display: flex;
   gap: 4px;
 }
+
 .education {
   z-index: 50;
   position: absolute;
-  right: -100px;
+  right: 0px;
   top: 200px;
+  box-shadow: inset;
 }
 </style>
