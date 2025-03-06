@@ -3,13 +3,13 @@
     <svg
       v-if="isLargeScreen"
       xmlns="http://www.w3.org/2000/svg"
-      width="1121"
-      height="735"
-      viewBox="0 0 1121 735"
+      width="1281"
+      height="736"
+      viewBox="0 0 1281 736"
       fill="none"
     >
       <path
-        d="M1102.06 732.643H18.0607C9.22412 732.643 2.06067 725.48 2.06067 716.643V18.0044C2.06067 9.15919 9.17314 2.0044 18.0011 2.0044L414.076 2.00443C422.94 2.00443 430.26 9.18802 430.26 17.9972V59.5032C430.26 70.5498 439.215 79.4972 450.26 79.4972H1102.06C1110.9 79.4972 1118.06 86.6607 1118.06 95.4972V716.643C1118.06 725.48 1110.9 732.643 1102.06 732.643Z"
+        d="M1262.07 733.141H18.0712C9.23464 733.141 2.07117 725.978 2.07117 717.141V18.5029C2.07117 9.66638 9.23461 2.50293 18.0712 2.50293H571.389C580.226 2.50293 587.389 9.66637 587.389 18.5029V65.0219C587.389 76.0676 596.344 85.0219 607.389 85.0219H1262.07C1270.91 85.0219 1278.07 92.1853 1278.07 101.022V717.141C1278.07 725.978 1270.91 733.141 1262.07 733.141Z"
         fill="#C46961"
         stroke="#AB4B43"
         stroke-width="4"
@@ -51,10 +51,10 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import Tag from '../global/Tag.vue'
 import Education from '../education/Education.vue'
 
-const isLargeScreen = ref(window.matchMedia('(min-width: 1279px)').matches)
+const isLargeScreen = ref(window.matchMedia('(min-width: 1280px)').matches)
 
 const updateScreenSize = () => {
-  isLargeScreen.value = window.matchMedia('(min-width: 1279px)').matches
+  isLargeScreen.value = window.matchMedia('(min-width: 1280px)').matches
 }
 
 onMounted(() => {
@@ -90,7 +90,7 @@ svg {
   display: flex;
   flex-direction: column;
   height: 667px;
-  width: 1121px;
+  width: 1281px;
   border-radius: 10px;
   position: relative;
   z-index: 5;
@@ -103,7 +103,7 @@ svg {
   gap: 8px;
   justify-content: center;
   align-items: center;
-  position: relative; /* ✅ Fix positioning issue */
+  position: relative;
 }
 
 h1 {

@@ -93,7 +93,7 @@ div {
   display: flex;
   flex-direction: column;
   max-width: fit-content;
-  margin: 0 auto; /* Centers the section horizontally within its parent */
+  margin: 0 auto;
 }
 
 .Marquee0 {
