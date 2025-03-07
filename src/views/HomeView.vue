@@ -1,8 +1,8 @@
 <template>
   <div>
     <section class="Hero">
-      <section class="navigation">
-        <NavBar v-if="isNavbarVisible" />
+      <section class="navigation" v-if="isNavbarVisible">
+        <NavBar />
         <MenuDropdown />
       </section>
       <HeroBanner />
