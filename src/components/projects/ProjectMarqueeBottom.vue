@@ -9,7 +9,7 @@
 
 <script setup>
 import { ref } from 'vue'
-const words = ref(Array(15).fill('Project')) // เพิ่มจำนวนให้มากขึ้น
+const words = ref(Array(15).fill('Project'))
 </script>
 
 <style scoped>
@@ -25,6 +25,7 @@ const words = ref(Array(15).fill('Project')) // เพิ่มจำนวน�
   position: absolute;
   right: -200px;
   background: var(--redink, #ab4b43);
+  opacity: 60%;
 }
 
 .marquee-content {

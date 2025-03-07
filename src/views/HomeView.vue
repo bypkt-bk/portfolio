@@ -8,18 +8,23 @@
       <HeroBanner />
     </section>
 
-    <section class="section">
-      <template v-if="isLargeScreen">
-        <ProjectMarqueeBottom class="Marquee0" />
+    <section class="project">
+      <!-- <ProjectMain/> -->
+      <p class="portfolio-title"><Briefcase stroke-width="3px" /> PORTFOLIO</p>
+      <div class="project-list">
+        <ProjectItem v-for="project in projects" :key="project.id" :project="project" />
+      </div>
+      <!-- <ProjectMarqueeBottom class="Marquee0" /> -->
+      <template v-if="isMarqueeVisible">
         <ProjectMarqueeTop class="Marquee1" />
         <ProjectMarqueeBottom class="Marquee2" />
         <ProjectMarqueeTop class="Marquee3" />
         <ProjectMarqueeBottom class="Marquee4" />
+        <ProjectMarqueeTop class="Marquee5" />
+        <ProjectMarqueeBottom class="Marquee6" />
       </template>
-      <div class="project-list">
-        <ProjectItem v-for="project in projects" :key="project.id" :project="project" />
-      </div>
     </section>
+    <!-- <Footer /> -->
   </div>
 </template>
 
@@ -30,21 +35,23 @@ import ProjectItem from '@/components/projects/ProjectItem.vue'
 import MenuDropdown from '@/components/header/MenuDropdown.vue'
 import ProjectMarqueeTop from '@/components/projects/ProjectMarqueeTop.vue'
 import ProjectMarqueeBottom from '@/components/projects/ProjectMarqueeBottom.vue'
+import ProjectMain from '@/components/projects/ProjectMain.vue'
+import Footer from '@/components/footer/footer.vue'
+import { Briefcase } from 'lucide-vue-next'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const projects = [
-  { id: 1, title: 'TaskMangement Website', description: 'A tool for analyzing UX data.' },
-  { id: 2, title: 'MajorMatch Web Application', description: 'A platform for online courses.' },
-  { id: 3, title: 'Tax Calculator Web Application', description: 'A platform for online courses.' },
-  { id: 4, title: 'Bill Hub Website', description: 'A platform for online courses.' },
-  { id: 5, title: 'Parcel Management', description: 'A platform for online courses.' },
+  { id: 1, title: 'MajorMatch Web Application', description: 'A platform for online courses.' },
+  { id: 2, title: 'Tax Calculator Web Application', description: 'A platform for online courses.' },
+  { id: 3, title: 'Bill Hub Website', description: 'A platform for online courses.' },
+  { id: 4, title: 'Parcel Management', description: 'A platform for online courses.' },
 ]
 
-const isLargeScreen = ref(window.matchMedia('(min-width: 1121px)').matches)
+const isMarqueeVisible = ref(window.matchMedia('(min-width: 852px)').matches)
 const isNavbarVisible = ref(window.matchMedia('(min-width: 755px)').matches)
 
 const updateScreenSize = () => {
-  isLargeScreen.value = window.matchMedia('(min-width: 1121px)').matches
+  isMarqueeVisible.value = window.matchMedia('(min-width: 852px)').matches
   isNavbarVisible.value = window.matchMedia('(min-width: 755px)').matches
 }
 
@@ -62,26 +69,6 @@ div {
   position: relative;
 }
 
-.section {
-  padding: 2rem;
-  position: relative;
-  overflow-x: hidden;
-}
-
-.project-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  flex-wrap: wrap;
-  margin-top: 100px;
-}
-
-.skills-container {
-  display: flex;
-  gap: 2rem;
-}
-
 .navigation {
   display: flex;
   gap: 8px;
@@ -96,20 +83,79 @@ div {
   margin: 0 auto;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.portfolio-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.portfolio-title {
+  display: flex;
+  color: white;
+  background-color: var(--redbrick);
+  text-align: center;
+  font-family: monospace;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: -0.576px;
+  width: fit-content;
+  border-radius: 15px 50px;
+  border: 3px solid var(--redink);
+  padding: 4px;
+  padding-left: 80px;
+  padding-right: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
 .Marquee0 {
-  top: 20px;
+  top: -20px;
+  z-index: -1;
 }
 .Marquee1 {
-  top: 180px;
+  top: 140px;
+  z-index: -1;
 }
 .Marquee2 {
-  top: 340px;
+  top: 300px;
+  z-index: -1;
 }
 .Marquee3 {
-  top: 520px;
+  top: 460px;
+  z-index: -1;
 }
 .Marquee4 {
-  top: 700px;
+  top: 620px;
+  z-index: -1;
+}
+.Marquee5 {
+  top: 780px;
+  z-index: -1;
+}
+.Marquee6 {
+  top: 940px;
+  z-index: -1;
 }
 
 .Marquee0:hover,

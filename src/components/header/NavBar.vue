@@ -24,7 +24,7 @@ import { Linkedin, Mail, Github } from 'lucide-vue-next'
   align-items: center;
   gap: 18px;
   border-radius: 18px;
-  border: 4px solid var(--redink);
+  border: 3px solid var(--redink);
   background: var(--white, #fff);
   width: fit-content;
   min-width: 601px;

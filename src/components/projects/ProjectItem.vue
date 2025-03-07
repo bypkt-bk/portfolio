@@ -11,15 +11,12 @@ defineProps({ project: Object })
 
 <style scoped>
 .project-item {
-  border: 1px solid #ccc;
   padding: 1rem;
-  width: 320px;
-  height: 380px;
-  min-width: none;
-  max-width: none;
+  width: 370px;
+  height: 440px;
   color: black;
   border-radius: 18px;
-  border: 4px solid var(--redink, #ab4b43);
+  border: 3px solid var(--redink, #ab4b43);
   background: #fff;
   cursor: pointer;
 }

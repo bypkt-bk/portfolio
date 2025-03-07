@@ -25,7 +25,7 @@ button {
   justify-content: flex-end;
   align-items: center;
   border-radius: 18px;
-  border: 4px solid var(--redink);
+  border: 3px solid var(--redink);
   background: var(--white, #fff);
   color: var(--redbrick);
 }

@@ -25,6 +25,7 @@ const words = ref(Array(15).fill('Project')) // เพิ่มจำนวน�
   position: absolute;
   left: -200px;
   background: var(--redink, #ab4b43);
+  opacity: 60%;
 }
 
 .marquee-content {
@@ -33,7 +34,7 @@ const words = ref(Array(15).fill('Project')) // เพิ่มจำนวน�
   font-size: 48px;
   font-style: italic;
   font-weight: 900;
-  line-height: 48px; /* 100% */
+  line-height: 48px;
   gap: 60px;
   animation: marquee 80s linear infinite;
 }
