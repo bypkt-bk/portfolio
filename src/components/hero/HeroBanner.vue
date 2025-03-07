@@ -25,7 +25,7 @@
           <Tag class="Tag" label="Web Developer" />
         </div>
       </div>
-      <section class="education">
+      <section ref="educationRef" class="education" v-motion>
         <Education />
       </section>
     </div>
@@ -39,7 +39,7 @@
           <Tag class="Tag" label="Web Developer" />
         </div>
       </div>
-      <section class="education">
+      <section ref="educationRef" class="education" v-motion>
         <Education />
       </section>
     </div>
@@ -48,6 +48,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useMotion } from '@vueuse/motion'
 import Tag from '../global/Tag.vue'
 import Education from '../education/Education.vue'
 
@@ -63,6 +64,19 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('resize', updateScreenSize)
+})
+
+const educationRef = ref(null)
+
+onMounted(() => {
+  useMotion(educationRef, {
+    initial: { x: 10, y: 0, rotate: 20, opacity: 1 },
+    enter: {
+      y: 50,
+      rotate: -15,
+      transition: { type: 'spring', stiffness: 100, damping: 10 },
+    },
+  })
 })
 </script>
 
@@ -121,10 +135,9 @@ h1 {
 }
 
 .education {
-  z-index: 50;
   position: absolute;
   right: 0px;
   top: 200px;
-  box-shadow: inset;
+  z-index: 50;
 }
 </style>
