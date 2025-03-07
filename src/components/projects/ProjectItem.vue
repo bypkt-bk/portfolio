@@ -12,7 +12,9 @@ defineProps({ project: Object })
 <style scoped>
 .project-item {
   padding: 1rem;
-  width: 370px;
+  width: 100%;
+  max-width: 370px;
+  min-width: 320px;
   height: 440px;
   color: black;
   border-radius: 18px;

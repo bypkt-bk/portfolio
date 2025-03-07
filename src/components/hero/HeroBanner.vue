@@ -84,6 +84,7 @@ onMounted(() => {
 .hero {
   display: flex;
   background-color: #c46961;
+  min-width: 320px;
   margin-top: 18px;
   height: 600px;
   width: calc(100vw - 64px); /* Subtract 40px left and 40px right margin */
