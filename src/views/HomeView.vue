@@ -9,11 +9,6 @@
     </section>
 
     <section class="project">
-      <!-- <ProjectMain/> -->
-      <p class="portfolio-title"><Briefcase stroke-width="3px" /> PORTFOLIO</p>
-      <div class="project-list">
-        <ProjectItem v-for="project in projects" :key="project.id" :project="project" />
-      </div>
       <!-- <ProjectMarqueeBottom class="Marquee0" /> -->
       <template v-if="isMarqueeVisible">
         <ProjectMarqueeTop class="Marquee1" />
@@ -23,6 +18,11 @@
         <ProjectMarqueeTop class="Marquee5" />
         <ProjectMarqueeBottom class="Marquee6" />
       </template>
+      <!-- <ProjectMain/> -->
+      <p class="portfolio-title"><Briefcase stroke-width="3px" /> PORTFOLIO</p>
+      <div class="project-list">
+        <ProjectItem v-for="project in projects" :key="project.id" :project="project" />
+      </div>
     </section>
     <!-- <Footer /> -->
   </div>
@@ -129,40 +129,22 @@ div {
   flex-wrap: wrap;
 }
 
-.Marquee0 {
-  top: -20px;
-  z-index: -1;
-}
 .Marquee1 {
   top: 140px;
-  z-index: -1;
 }
 .Marquee2 {
   top: 300px;
-  z-index: -1;
 }
 .Marquee3 {
   top: 460px;
-  z-index: -1;
 }
 .Marquee4 {
   top: 620px;
-  z-index: -1;
 }
 .Marquee5 {
   top: 780px;
-  z-index: -1;
 }
 .Marquee6 {
   top: 940px;
-  z-index: -1;
-}
-
-.Marquee0:hover,
-.Marquee1:hover,
-.Marquee2:hover,
-.Marquee3:hover,
-.Marquee4:hover {
-  background-color: black;
 }
 </style>
