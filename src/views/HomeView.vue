@@ -1,11 +1,11 @@
 <template>
   <div>
-    <img src="@/assets/leaf/leaf1.png" alt="balloon" :width="200" class="leaf1" />
-    <img src="@/assets/leaf/leaf2.png" alt="balloon" :width="150" class="leaf2" />
-    <img src="@/assets/leaf/leaf3.png" alt="balloon" :width="150" class="leaf3" />
-    <img src="@/assets/leaf/leaf4.png" alt="balloon" :width="80" class="leaf4" />
-    <img src="@/assets/leaf/leaf5.png" alt="balloon" :width="200" class="leaf5" />
-    <img src="@/assets/leaf/leaf6.png" alt="balloon" :width="80" class="leaf6" />
+    <img src="@/assets/leaf/leaf1.webp" alt="balloon" :width="200" class="leaf1" />
+    <img src="@/assets/leaf/leaf2.webp" alt="balloon" :width="150" class="leaf2" />
+    <img src="@/assets/leaf/leaf3.webp" alt="balloon" :width="150" class="leaf3" />
+    <img src="@/assets/leaf/leaf4.webp" alt="balloon" :width="80" class="leaf4" />
+    <img src="@/assets/leaf/leaf5.webp" alt="balloon" :width="200" class="leaf5" />
+    <img src="@/assets/leaf/leaf6.webp" alt="balloon" :width="80" class="leaf6" />
     <section class="Hero">
       <section class="navigation" v-if="isNavbarVisible">
         <NavBar />

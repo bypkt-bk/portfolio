@@ -67,7 +67,7 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: url('background.png') no-repeat bottom center;
+  background: url('background.webp') no-repeat bottom center;
   background-size: cover;
   background-attachment: fixed;
 

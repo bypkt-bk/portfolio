@@ -27,5 +27,6 @@ defineProps({ project: Object })
 .project-item:hover {
   border-radius: 100px;
   transform: scale(1.2);
+  z-index: 5;
 }
 </style>
