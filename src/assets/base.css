@@ -67,7 +67,10 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--creama);
+  background: url('background.png') no-repeat bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+
   transition:
     color 0.5s,
     background-color 0.5s;

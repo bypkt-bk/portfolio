@@ -51,7 +51,6 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import { useMotion } from '@vueuse/motion'
 import Tag from '../global/Tag.vue'
 import Education from '../education/Education.vue'
-
 const isLargeScreen = ref(window.matchMedia('(min-width: 1280px)').matches)
 
 const updateScreenSize = () => {
