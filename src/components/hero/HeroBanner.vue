@@ -17,7 +17,7 @@
     </svg>
 
     <div v-if="isLargeScreen" class="overlay">
-      <img src="@/assets/boom.png" alt="boom" width="40%" class="boom" />
+      <img src="@/assets/boom.webp" alt="boom" width="40%" class="boom" />
       <div class="info">
         <h1>Banyaphon Kongtham</h1>
         <div class="Tag">
@@ -31,7 +31,7 @@
     </div>
 
     <div v-else class="hero">
-      <img src="@/assets/boom.png" alt="boom" height="70%" class="boom" />
+      <img src="@/assets/boom.webp" alt="boom" height="70%" class="boom" />
       <div class="info">
         <h1>Banyaphon Kongtham</h1>
         <div class="Tag">
