@@ -1,11 +1,12 @@
 <template>
-  <div class="dropdown">
+  <img src="@/assets/logo.svg" alt="logo" width="38" class="logo" />
+  <!-- <div class="dropdown">
     <button @click="isOpen = !isOpen"><AlignJustify /></button>
     <ul v-if="isOpen">
       <li><a href="/projects">Projects</a></li>
       <li><a href="/contact">Contact</a></li>
     </ul>
-  </div>
+  </div> -->
 </template>
 
 <script setup>
@@ -15,6 +16,13 @@ const isOpen = ref(false)
 </script>
 
 <style scoped>
+.logo {
+  align-self: center;
+  border-radius: 100%;
+  height: 38px;
+  border: 3px solid var(--redink);
+}
+
 .dropdown {
   position: relative;
   z-index: 10;

@@ -1,6 +1,6 @@
 <template>
   <a class="project-item" :href="`/${project.title}`">
-    <img :src="project.src" :alt="project.title" :height="'100%'" />
+    <img :src="project.src" :alt="project.title" />
   </a>
 </template>
 
@@ -24,9 +24,24 @@ defineProps({ project: Object })
   overflow: hidden;
   box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.1);
 }
+
 .project-item:hover {
   border-radius: 100px;
   transform: scale(1.2);
   z-index: 5;
+}
+
+@media (max-width: 768px) {
+  .project-item:hover {
+    border-radius: 18px; /* Reset to default */
+    transform: none;
+    z-index: 1;
+  }
+}
+
+.project-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

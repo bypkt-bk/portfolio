@@ -54,21 +54,33 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Tax Calculator Web Application',
+    title: 'Bill Hub Website',
     description: 'A platform for online courses.',
-    src: new URL('@/assets/project/cusw/cusw.png', import.meta.url).href,
+    src: new URL('@/assets/project/billhub/bill.png', import.meta.url).href,
   },
   {
     id: 3,
-    title: 'Bill Hub Website',
+    title: 'Ticket Customize Web Application',
     description: 'A platform for online courses.',
-    src: new URL('@/assets/project/cusw/cusw.png', import.meta.url).href,
+    src: new URL('@/assets/project/ticket/ticket.png', import.meta.url).href,
   },
   {
     id: 4,
+    title: 'Tax Calculator Web Application',
+    description: 'A platform for online courses.',
+    src: new URL('@/assets/project/tax/tax.png', import.meta.url).href,
+  },
+  {
+    id: 5,
+    title: 'MajorMatch Web Application',
+    description: 'A platform for online courses.',
+    src: new URL('@/assets/project/match/match.png', import.meta.url).href,
+  },
+  {
+    id: 6,
     title: 'Parcel Management',
     description: 'A platform for online courses.',
-    src: new URL('@/assets/project/cusw/cusw.png', import.meta.url).href,
+    src: new URL('@/assets/project/parcel/parcel.png', import.meta.url).href,
   },
 ]
 

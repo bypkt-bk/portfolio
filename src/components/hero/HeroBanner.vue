@@ -17,29 +17,29 @@
     </svg>
 
     <div v-if="isLargeScreen" class="overlay">
+      <img src="@/assets/boom.png" alt="boom" width="40%" class="boom" />
       <div class="info">
         <h1>Banyaphon Kongtham</h1>
         <div class="Tag">
-          <Tag class="Tag" label="UX/UI" />
-          <Tag class="Tag" label="Front end" />
           <Tag class="Tag" label="Web Developer" />
+          <Tag class="Tag" label="Data Scientist" />
         </div>
       </div>
-      <section ref="educationRef" class="education" v-motion>
+      <section v-if="isEducationShow" ref="educationRef" class="education" v-motion>
         <Education />
       </section>
     </div>
 
     <div v-else class="hero">
+      <img src="@/assets/boom.png" alt="boom" height="70%" class="boom" />
       <div class="info">
         <h1>Banyaphon Kongtham</h1>
         <div class="Tag">
-          <Tag class="Tag" label="UX/UI" />
-          <Tag class="Tag" label="Front end" />
           <Tag class="Tag" label="Web Developer" />
+          <Tag class="Tag" label="Data Scientist" />
         </div>
       </div>
-      <section ref="educationRef" class="education" v-motion>
+      <section v-if="isEducationShow" ref="educationRef" class="education" v-motion>
         <Education />
       </section>
     </div>
@@ -52,9 +52,11 @@ import { useMotion } from '@vueuse/motion'
 import Tag from '../global/Tag.vue'
 import Education from '../education/Education.vue'
 const isLargeScreen = ref(window.matchMedia('(min-width: 1280px)').matches)
+const isEducationShow = ref(window.matchMedia('(min-width: 1080px)').matches)
 
 const updateScreenSize = () => {
   isLargeScreen.value = window.matchMedia('(min-width: 1280px)').matches
+  isEducationShow.value = window.matchMedia('(min-width: 1080px)').matches
 }
 
 onMounted(() => {
@@ -82,15 +84,16 @@ onMounted(() => {
 <style scoped>
 .hero {
   display: flex;
+  flex-direction: column;
   background-color: #c46961;
   min-width: 320px;
   margin-top: 18px;
   height: 600px;
-  width: calc(100vw - 64px); /* Subtract 40px left and 40px right margin */
+  width: calc(100vw - 64px);
   border-radius: 18px;
   border: 4px solid var(--redink);
-  justify-content: center;
-  align-items: end;
+  justify-content: flex-end;
+  align-items: center;
   padding-bottom: 48px;
 }
 
@@ -108,14 +111,15 @@ svg {
   border-radius: 10px;
   position: relative;
   z-index: 5;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  padding-bottom: 48px;
 }
 .info {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
 }
@@ -139,5 +143,8 @@ h1 {
   right: 0px;
   top: 200px;
   z-index: 50;
+}
+.boom {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0) 70%);
 }
 </style>
