@@ -48,37 +48,37 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const projects = [
   {
     id: 1,
-    title: 'MajorMatch Web Application',
+    title: 'task-management-website',
     description: 'A platform for online courses.',
     src: new URL('@/assets/project/cusw/cusw.webp', import.meta.url).href,
   },
   {
     id: 2,
-    title: 'Bill Hub Website',
+    title: 'Bill-Hub-Website',
     description: 'A platform for online courses.',
     src: new URL('@/assets/project/billhub/bill.webp', import.meta.url).href,
   },
   {
     id: 3,
-    title: 'Ticket Customize Web Application',
+    title: 'Ticket-Customize-Web-Application',
     description: 'A platform for online courses.',
     src: new URL('@/assets/project/ticket/ticket.webp', import.meta.url).href,
   },
   {
     id: 4,
-    title: 'Tax Calculator Web Application',
+    title: 'Tax-Calculator-Web-Application',
     description: 'A platform for online courses.',
     src: new URL('@/assets/project/tax/tax.webp', import.meta.url).href,
   },
   {
     id: 5,
-    title: 'MajorMatch Web Application',
+    title: 'MajorMatch-Web-Application',
     description: 'A platform for online courses.',
     src: new URL('@/assets/project/match/match.webp', import.meta.url).href,
   },
   {
     id: 6,
-    title: 'Parcel Management',
+    title: 'Parcel-Management',
     description: 'A platform for online courses.',
     src: new URL('@/assets/project/parcel/parcel.webp', import.meta.url).href,
   },

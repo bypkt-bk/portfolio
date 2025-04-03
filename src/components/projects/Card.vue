@@ -1,5 +1,5 @@
 <template>
-  <a class="project-item" :href="`/${project.title}`">
+  <a class="project-item" :href="`/project/${project.title}`">
     <img :src="project.src" :alt="project.title" />
   </a>
 </template>

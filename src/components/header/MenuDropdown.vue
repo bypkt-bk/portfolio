@@ -1,18 +1,11 @@
 <template>
-  <img src="@/assets/logo.svg" alt="logo" width="38" class="logo" />
-  <!-- <div class="dropdown">
-    <button @click="isOpen = !isOpen"><AlignJustify /></button>
-    <ul v-if="isOpen">
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/contact">Contact</a></li>
-    </ul>
-  </div> -->
+  <img src="@/assets/logo.svg" alt="logo" width="38" class="logo" @click="navigateToHome" />
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { AlignJustify } from 'lucide-vue-next'
-const isOpen = ref(false)
+const navigateToHome = () => {
+  window.location.href = '/'
+}
 </script>
 
 <style scoped>
@@ -21,6 +14,7 @@ const isOpen = ref(false)
   border-radius: 100%;
   height: 38px;
   border: 3px solid var(--redink);
+  cursor: pointer;
 }
 
 .dropdown {
