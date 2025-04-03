@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/project/task-management-website',
       name: 'task-management-website',
-      component: () => import('../views/project/Task-Management-Website.vue'),
+      component: () => import('@/views/project/Task-Management-Website.vue'),
     },
   ],
 })
