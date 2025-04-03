@@ -9,3 +9,6 @@ body {
   padding-top: 1rem;
   font-family: monospace;
 }
+html {
+  cursor: url('cursor.ico'), default;
+}
